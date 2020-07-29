@@ -9,6 +9,9 @@
         <variable
             name="user1"
             type="ObservableMap&lt;String,String>" />
+        <variable
+            name="user2"
+            type="com.wayeal.jetpackdemo.User2" />
     </data>
 
     <LinearLayout
@@ -42,6 +45,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text='@{user1.get("key")}'
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user2.name}"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变化USER2值"
             />
 
     </LinearLayout>

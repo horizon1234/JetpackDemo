@@ -43,6 +43,14 @@ class MainActivity : AppCompatActivity() {
             tmpUser.lastName.set("22222")
         }
 
+        val tmpUser2 = User2()
+        tmpUser2.name = "haha"
+        binding1.user2 = tmpUser2
+
+        button2.setOnClickListener {
+            tmpUser2.name = "uuuu"
+        }
+
         /**
          * 综合分析，肯定第二种方法更好，第二种方法做的操作就是创建Binding对象，同时inflate出对应
          * 布局，然后和binding绑定起来
